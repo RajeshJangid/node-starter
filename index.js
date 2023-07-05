@@ -9,8 +9,9 @@ var app = express();
 app.get('/', function (req, res) {
    res.send('Hello World');
 });
-
-app.post('/addUser', function (req, res) {
+app.post('/add-user', function (req, res) {
+   res.send(req.body);
+});
    res.send(req.body);
 });
 
