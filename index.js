@@ -1,4 +1,6 @@
 var express = require('express');
+// Serve static files from the "public" directory
+app.use(express.static('public'));
 var app = express();
 
 app.get('/', function (req, res) {
@@ -11,3 +13,4 @@ var server = app.listen(8081, function () {
    
    console.log("Example app listening at http://%s:%s", host, port)
 })
+
