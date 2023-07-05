@@ -1,4 +1,5 @@
 var express = require('express');
+var db = require('./db'); // Add this line
 var app = express();
 
 app.get('/', function (req, res) {
@@ -11,3 +12,4 @@ var server = app.listen(8081, function () {
    
    console.log("Example app listening at http://%s:%s", host, port)
 })
+
